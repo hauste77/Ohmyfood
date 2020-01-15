@@ -39,7 +39,33 @@
     margin-top: 50px;
     order: 1;
 	text-align: center;
-	box-shadow: 10px 5px 5px #c9bcbb;
+	border-radius: 40px;
+	box-shadow: -6px -6px 20px rgba(0,0,0,0.1),
+				6px 6px 20px rgba(0,0,0,.2);
+}
+
+.menu-1:hover{
+	font-size: 120%;
+	box-shadow: inset -6px -6px 10px rgba(0,0,0,.1),
+				inset 6px 6px 20px rgba(0,0,0,.1);
+}
+
+
+
+.container-menu .menu-1 p a{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	padding-top: 5px;
+	border-radius: 40px;
+	color: red;
+	box-shadow: -4px -4px 15px rgba(255,255,255,.1),
+				4px 4px 15px rgba(0,0,0,.2);
+}
+
+.container-menu .menu-1 p a:hover{
+	box-shadow: inset -4px -4px 10px rgba(255,255,255,.1),
+				inset 4px 4px 10px rgba(0,0,0,0.05);
 }
 
 .menu-2{
@@ -49,8 +75,32 @@
     margin-top: 50px;
     order: 3;
 	text-align: center;
-	box-shadow: 10px 5px 5px #c9bcbb;
+	border-radius: 40px;
+	box-shadow: -6px -6px 20px rgba(0,0,0,0.1),
+				6px 6px 20px rgba(0,0,0,.1);
 }
+
+.menu-2:hover{
+	box-shadow: inset -6px -6px 10px rgba(0,0,0,.1),
+				inset 6px 6px 20px rgba(0,0,0,.1);
+}
+
+.container-menu .menu-2 p a{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	padding-top: 5px;
+	border-radius: 40px;
+	color: red;
+	box-shadow: -4px -4px 15px rgba(0,0,0,.1),
+				4px 4px 15px rgba(0,0,0,.2);
+}
+
+.container-menu .menu-2 p a:hover{
+	box-shadow: inset -4px -4px 10px rgba(0,0,0,.1),
+				inset 4px 4px 10px rgba(0,0,0,0.05);
+}
+
 
 .menu-3{
 	background: #f9f9f9;
@@ -59,7 +109,30 @@
     margin-top: 50px;
     order: 2;
 	text-align: center;
-	box-shadow: 10px 5px 5px #c9bcbb;
+	border-radius: 40px;
+	box-shadow: -6px -6px 20px rgba(0,0,0,0.1),
+				6px 6px 20px rgba(0,0,0,.1);
+}
+
+.menu-3:hover{
+	box-shadow: inset -6px -6px 10px rgba(0,0,0,.1),
+				inset 6px 6px 20px rgba(0,0,0,.1);
+}
+
+.container-menu .menu-3 p a{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	padding-top: 5px;
+	border-radius: 40px;
+	color: red;
+	box-shadow: -4px -4px 15px rgba(0,0,0,0.1),
+				4px 4px 15px rgba(0,0,0,.2);
+}
+
+.container-menu .menu-3 p a:hover{
+	box-shadow: inset -4px -4px 10px rgba(0,0,0,.1),
+				inset 4px 4px 10px rgba(0,0,0,0.1);
 }
 
 .menu-4{
@@ -69,7 +142,30 @@
     margin-top: 50px;
     order: 3;
     text-align: center;
-    box-shadow: 10px 5px 5px #c9bcbb;
+    border-radius: 40px;
+    box-shadow: -6px -6px 20px rgba(0,0,0,0.1),
+				6px 6px 20px rgba(0,0,0,.1);
+}
+
+.menu-4:hover{
+	box-shadow: inset -6px -6px 10px rgba(0,0,0,.1),
+				inset 6px 6px 20px rgba(0,0,0,.1);
+}
+
+.container-menu .menu-4 p a{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	padding-top: 5px;
+	border-radius: 40px;
+	color: red;
+	box-shadow: -4px -4px 15px rgba(255,255,255,.1),
+				4px 4px 15px rgba(0,0,0,.2);
+}
+
+.container-menu .menu-4 p a:hover{
+	box-shadow: inset -4px -4px 10px rgba(255,255,255,.1),
+				inset 4px 4px 10px rgba(0,0,0,0.05);
 }
 
 h2{
@@ -88,13 +184,21 @@ button{
 	margin-bottom: 40px;
 	margin-right: auto;
 	margin-left: auto;
-	padding-left: 85px;
+	padding-left: 78px;
 	border-radius: 10px;
 	background-color: #579c87;
+	box-shadow: 0px 0px 10px 4px rgba(0,0,0,.2),
+	    		6px 6px 20px rgba(0,0,0,.2);
+}
+
+button:hover{
+	box-shadow: inset 0px 0px 10px 4px rgba(0,0,0,.2),
+	    		inset 6px 6px 20px rgba(0,0,0,.2);
 }
 
 a{
 	text-decoration: none;
+	text-transform: uppercase;
 }
 
 
