@@ -21,6 +21,9 @@
 
 .container-menu{
 	height: 964px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
