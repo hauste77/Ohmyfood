@@ -45,8 +45,8 @@ header {
 }
  
 header + div {
-	overflow: hidden;
-	overflow-y: auto;
+	/*overflow: hidden;*/
+	/*overflow-y: auto;*/
 	flex: 1;
 	justify-content: center;
 }
@@ -59,6 +59,33 @@ header + div {
 	margin-right: auto;
 	margin-bottom: auto;
 	background: #fcdfdb;
+}
+.carte-2 {
+	width: 600px;
+    height: 870px;
+    text-align: center;
+    margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	background: #ffffff;
+}
+.carte-3 {
+	width: 600px;
+    height: 790px;
+    text-align: center;
+    margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	background: #edefef;
+}
+.carte-4 {
+	width: 600px;
+    height: 870px;
+    text-align: center;
+    margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	background: #ffffff;
 }
 
 .carte span {
@@ -76,16 +103,9 @@ header + div {
 	margin-top: 30px;
 }
 
-#menu-2 {
+#menu-2 .carte{
 	background: white;
 }
-#menu-2 h2 {
-	background-image: linear-gradient(to right, #d8852e, #f6604b, #ff367e, #e633be, #905bfd); 
-						-webkit-text-fill-color: transparent;
-						-webkit-background-clip: text; 
-}
-
-
 
 #menus {
 	display: grid;
@@ -151,6 +171,89 @@ p {
 	margin-right: 20px;
 }
 
+/* paragrphe color menu-2 */
+.p-1 h2 {
+	margin-top: 300px;
+	background-image: linear-gradient(to right, #d8852e, #f6604b, #ff367e, #e633be, #905bfd); 
+						-webkit-text-fill-color: transparent;
+						-webkit-background-clip: text; 
+}
+.p-1 p {
+	color: #c67412;
+}
+.p-1 .title::before {
+	background-color: #c67412;
+}
+.p-1 .title::after {
+	background-color: #c67412;
+}
+.p-2 p{
+	color: #a56799;
+}
+.p-2 .title::before {
+	background-color: #a56799;
+}
+.p-2 .title::after {
+	background-color: #a56799;
+}
+.p-3 p {
+	color: #6e4ccc;
+}
+.p-3 .title::before {
+	background-color: #6e4ccc;
+}
+.p-3 .title::after {
+	background-color: #6e4ccc;
+}
+.p-4, .p-5, .p-6 p {
+	color: black;
+}
+.p-4 h2 {
+	background-image: linear-gradient(to right, #305ee7, #2569ed, #1973f2, #0e7df7, #0887fb); -webkit-text-fill-color: transparent;
+    					-webkit-background-clip: text;
+}
+.p-4 .title::before {
+	background-color: #0228dd;
+}
+.p-4 .title::after {
+	background-color: #0228dd;
+}	
+.p-5 .title::before {
+	background-color: #0670f3;
+}
+.p-5 .title::after {
+	background-color: #0670f3;
+}	
+.p-6 .title::before {
+	background-color: #229df9;
+}
+.p-6 .title::after {
+	background-color: #229df9;
+}
+.p-7 h2 {
+	margin-top: 300px;
+	background-image: linear-gradient(to right, #42973c, #61b04c, #7fca5c, #9fe46d, #bfff7e); -webkit-text-fill-color: transparent;
+    					-webkit-background-clip: text;
+}
+.p-7 .title::before {
+	background: linear-gradient(to right, #42973c, #bfff7e);
+}
+.p-7 .title::after {
+	background: linear-gradient(to right, #bfff7e, #42973c);
+}		
+.p-8 .title::before {
+	background: linear-gradient(to right, #42973c, #bfff7e);
+}
+.p-8 .title::after {
+	background: linear-gradient(to right, #bfff7e, #42973c);
+}		
+.p-9 .title::before {
+	background: linear-gradient(to right, #42973c, #bfff7e);
+}
+.p-9 .title::after {
+	background: linear-gradient(to right, #bfff7e, #42973c);
+}		
+
 /* menu color */
 .menu:nth-child(1) { background: #fcdfdb; }
 .menu:nth-child(2) { background: #FFF5FE; }
@@ -190,7 +293,7 @@ p {
 
 button {
 	display: flex;
-	margin: 90px auto;
+	margin: 50px auto;
 	padding: 9px 20px;
 	border-radius: 3px;
 	background-color: #579c87;
