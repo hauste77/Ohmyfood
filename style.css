@@ -12,10 +12,11 @@ a {
 	text-decoration: none;
 }
 
-h1 {
+h1 a{
 	font-family: roboto;
 	font-weight: bold;
 	font-size: 50px;
+	color: #FDCB46;
 }
 
 h2 {
@@ -26,11 +27,6 @@ h2 {
 	letter-spacing: 2px;
 }
 
-h3 {
-	font-family: roboto;
-	text-transform: uppercase;
-	color: #FDCB46;
-}
 
 button {
 	display: flex;
@@ -114,18 +110,22 @@ header {
 }
 
 .menu {
+	overflow: hidden;
 	justify-self: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    height: 400px;
-    width: 300px;
+	height: 400px;
+	width: 300px;
 	text-align: center;
 	border-radius: 4px;
-	box-shadow: -6px -6px 20px rgba(0,0,0,0.1),
-				6px 6px 20px rgba(0,0,0,.2);
-	transition: transform .2s;
+	box-shadow: -6px -6px 20px rgba(0,0,0,0.1),				6px 6px 20px rgba(0,0,0,.2);
+	transition: transform .3s;
+	-webkit-transition: transform .3s;
+	-moz-transition: transform .3s;
+	-ms-transition: transform .3s;
+	-o-transition: transform .3s;
 }
 
 .title {
@@ -326,8 +326,13 @@ form {
 .menu:nth-child(3) { background: #F9F9F9; }
 .menu:nth-child(4) { background: #FDFFFD; }
 
-.menu:hover{
-	transform: scale(1.05, 1.05);
+.menu:hover > *{
+	opacity: .7;
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
 }
 
 /* link color */
@@ -434,8 +439,8 @@ footer a:hover:nth-child(1) {
 }
 
 footer a:hover:nth-child(2) {
-	animation: shake .5s ease-in-out infinite alternate;
-	-webkit-animation: shake .5s ease-in-out infinite alternate;
+	animation: shake .5s;
+	-webkit-animation: shake .5s;
 }
 
 /* animation */
