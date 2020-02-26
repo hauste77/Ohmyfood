@@ -1,3 +1,8 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
 html, body, p {
 	margin: 0;
 	padding: 0;
@@ -28,19 +33,7 @@ h2 {
 }
 
 
-button {
-	display: flex;
-    color: inherit;
-    border: 0;
-}
-
-
-html, body {
-    height: 100%;
-}
-
 body {
-	overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -48,21 +41,23 @@ body {
 header {
 	display: flex;
 	height: 100px;
-	align-items: center;
 	justify-content: center;
-	text-align: center;
 	background: #579c87;
-	color: #FDCB46;
 }
 
 .wrapper {
-	overflow: hidden;
-	/* overflow-y: auto; */
 	flex: 1;
+	overflow: hidden;
+	overflow-y: auto;
 	flex-direction: column;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 20px;
+}
+
+.legale {
+	padding: 20px 100px;
 }
 
 #menu-1 { background-color: #fcdfdb; }
@@ -102,22 +97,16 @@ header {
 #menus {
 	display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 60px;
-    width: 80%;
-    margin: auto;
-    margin-top: 140px;
+	grid-gap: 60px;
+	margin-bottom: 20px;
 }
 
 .menu {
-	overflow: hidden;
-	justify-self: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 	height: 400px;
-	width: 300px;
+	padding: 5px 20px;
 	text-align: center;
 	border-radius: 4px;
 	box-shadow: -6px -6px 20px rgba(0,0,0,0.1),				6px 6px 20px rgba(0,0,0,.2);
@@ -142,7 +131,6 @@ header {
 .title::before,
 .title::after {
 	content: "";
-	display: inline-block;
 	flex-grow: 1;
     background-color: #3C1218;
     height: 3px;
@@ -167,7 +155,7 @@ header {
 .effet:hover, a:focus {
     background-size: 100% 2px;
 }
-
+/* formulaire */
 form {
 	width: 30%;
 	font-family: roboto;
@@ -220,26 +208,8 @@ form {
 	-o-border-radius: 4px;
 }
 
-.btn {
-	margin-top: 20px;
-	background: #579c87;
-	color: #FDCB46;
-	padding: 15px 30px;
-	border: none;
-	outline: none;
-	font-size: 16px;
-	border-radius: 30px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	-ms-border-radius: 30px;
-	-o-border-radius: 30px;
-}
 
-.btn:hover {
-	background: rgba(87, 156, 135, .9);
-}
-
-/* paragrphe color menu-2 */
+/* paragrphe color  */
 .p-1 h2 {
 	background-image: linear-gradient(to right, #d8852e, #f6604b, #ff367e, #e633be, #905bfd); 
 						-webkit-text-fill-color: transparent;
@@ -333,6 +303,11 @@ form {
 	-moz-transform: scale(1.2);
 	-ms-transform: scale(1.2);
 	-o-transform: scale(1.2);
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
 }
 
 /* link color */
@@ -354,6 +329,7 @@ form {
 	margin-top: 10px;
 }
 
+
 .fa, .fas {
     font-weight: 900;
     font-size: xx-large;
@@ -362,16 +338,16 @@ form {
     -webkit-background-clip: text;
 }
 
-button {
+.btn {
 	display: flex;
-	margin: 50px auto;
+	margin: auto;
 	padding: 9px 20px;
 	border-radius: 3px;
 	background-color: #579c87;
 	transition: background-color .2s;
 }
 
-button:hover{
+.btn:hover{
 	background-color: rgba(87, 156, 135, .9);
 }
 
@@ -390,24 +366,24 @@ button:hover{
 }
 
 
-button a {
+.btn a {
 	color: #FDCB46;
 }
 
-button:hover .dot.dot:nth-child(1){
+.btn:hover .dot.dot:nth-child(1){
 	animation: wave 1.3s linear infinite;
 	-webkit-animation: wave 1.3s linear infinite;
 	animation-delay: -1.4s;
 	
 }
-button:hover .dot.dot:nth-child(2){
+.btn:hover .dot.dot:nth-child(2){
 	animation: wave 1.3s linear infinite;
 	-webkit-animation: wave 1.3s linear infinite;
 	animation-delay: -1.1s;
 	
 }
 
-button:hover .dot.dot:nth-child(3){
+.btn:hover .dot.dot:nth-child(3){
 	animation: wave 1.3s linear infinite;
 	-webkit-animation: wave 1.3s linear infinite;
 	animation-delay: -0.9s;
@@ -416,19 +392,20 @@ button:hover .dot.dot:nth-child(3){
 footer {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	height: 100px;
 	background: #579c87;
 	transition: transform .2s;
 }
 
 footer a:nth-child(1) {
-	margin: auto;
+	
 	margin-left: 40px;
 	color: #FDCB46;
 }
 
 footer a:nth-child(2) {
-	margin: auto;
+	
 	margin-right: 40px;
 	color: #FDCB46;
 }
@@ -443,26 +420,7 @@ footer a:hover:nth-child(2) {
 	-webkit-animation: shake .5s;
 }
 
-/* animation */
-/*@keyframes shake {
-	from {
-		transform: rotate(10deg);
-		-webkit-transform: rotate(10deg);
-		-moz-transform: rotate(10deg);
-		-ms-transform: rotate(10deg);
-		-o-transform: rotate(10deg);
-}
-
-	to {
-		transform: rotate(-10deg);
-		transform-origin: center center;
-		-webkit-transform: rotate(-10deg);
-		-moz-transform: rotate(-10deg);
-		-ms-transform: rotate(-10deg);
-		-o-transform: rotate(-10deg);
- }
-
-}*/
+/* annimation */
 
 @keyframes wave {
 	0%, 60%, 100% {
@@ -495,3 +453,62 @@ footer a:hover:nth-child(2) {
 	90% { transform: translate(1px, 2px) rotate(0deg); }
 	100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+
+/* Media queries */ 
+
+ @media screen and ( max-height: 1080px ) {
+
+	.wrapper {
+		justify-content: flex-start;
+	}
+	
+}
+
+
+@media screen and (max-width: 700px) {
+
+	header a {
+		font-size: 35px;
+	}
+
+	.carte {
+		width: 90%;
+		padding: 45px 25px;
+	}
+
+	.carte  p {
+		text-align: center;
+	
+	}
+
+	.carte  p span {
+		float: inherit;
+		display: block;
+		margin-top: 5px;
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	#menus {
+		grid-template-columns: repeat(1, 2fr);
+	}
+
+	.wrapper {
+		justify-content: flex-start;
+	}
+
+
+	footer a{
+		font-size: 1.2em;
+	}
+
+	footer a:nth-child(1) {
+		margin-left: 20px;
+	}
+
+	footer a:nth-child(2) {
+		margin-right: 20px;
+	}
+
+	
+} 
