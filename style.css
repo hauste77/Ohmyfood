@@ -58,6 +58,11 @@ header {
 
 .legale {
 	padding: 20px 100px;
+	font-family: roboto, sans serif;
+}
+
+.legale a {
+	font-size: 16px;
 }
 
 #menu-1 { background-color: #fcdfdb; }
@@ -410,12 +415,7 @@ footer a:nth-child(2) {
 	color: #FDCB46;
 }
 
-footer a:hover:nth-child(1) {
-	animation: shake .5s;
-	-webkit-animation: shake .5s;
-}
-
-footer a:hover:nth-child(2) {
+footer a:hover {
 	animation: shake .5s;
 	-webkit-animation: shake .5s;
 }
@@ -508,6 +508,10 @@ footer a:hover:nth-child(2) {
 
 	footer a:nth-child(2) {
 		margin-right: 20px;
+	}
+
+	.legale {
+		padding: 20px 20px;
 	}
 
 	
