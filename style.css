@@ -54,6 +54,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	background: #579c87;
+	box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
 .wrapper {
@@ -428,6 +429,7 @@ footer {
 	min-height: 80px;
 	background: #579c87;
 	transition: transform .2s;
+	box-shadow: 0 -3px 5px rgba(57, 63, 72, 0.3);
 }
 
 footer a:nth-child(1) {
