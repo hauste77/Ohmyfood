@@ -82,6 +82,7 @@ header {
 
 .legale {
 	padding: 20px 100px;
+	overflow-y: auto;
 	font-family: roboto, sans serif;
 }
 
@@ -110,10 +111,16 @@ header {
 	font-size: 3.5em;
 }
 
-.carte p {
+.carte li {
 	margin-bottom: 20px;
 	text-align: left;
 }
+
+.carte ul {
+	list-style: none;
+	padding: 0;
+}
+
 .carte span {
 	float: right;
 }
@@ -248,7 +255,7 @@ form {
 						-webkit-text-fill-color: transparent;
 						-webkit-background-clip: text; 
 }
-.p-1 p {
+.p-1 ul {
 	color: #c67412;
 }
 .p-1 .title::before {
@@ -257,7 +264,7 @@ form {
 .p-1 .title::after {
 	background-color: #c67412;
 }
-.p-2 p{
+.p-2 ul{
 	color: #a56799;
 }
 .p-2 .title::before {
@@ -266,7 +273,7 @@ form {
 .p-2 .title::after {
 	background-color: #a56799;
 }
-.p-3 p {
+.p-3 ul {
 	color: #6e4ccc;
 }
 .p-3 .title::before {
@@ -505,12 +512,11 @@ footer a:hover {
 		padding: 45px 25px;
 	}
 
-	.carte  p {
+	.carte li {
 		text-align: center;
-	
 	}
 
-	.carte  p span {
+	.carte li span {
 		float: inherit;
 		display: block;
 		margin-top: 5px;
