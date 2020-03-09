@@ -137,6 +137,10 @@ header {
 	margin-bottom: 20px;
 }
 
+#menu-1 li {
+	color: #3C1218;
+}
+
 .menu {
 	display: flex;
 	flex-direction: column;
@@ -158,6 +162,10 @@ header {
 	align-items: center;
 	font-size: 1.5em;
 	margin-top: 60px;
+}
+
+.title-1 {
+	color: #3C1218;
 }
 
 .title::before,
@@ -324,7 +332,8 @@ form {
 }
 .p-9 .title::after {
 	background: linear-gradient(to right, #bfff7e, #42973c);
-}		
+}
+
 
 /* menu color */
 .menu:nth-child(1) { background: #fcdfdb; }
