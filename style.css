@@ -497,14 +497,11 @@ footer a:hover {
 
 /* Media queries */ 
 
- @media screen and ( max-height: 1080px ) {
-
+@media screen and ( max-height: 1080px) {
 	.wrapper {
-		justify-content: flex-start;
+		justify-content: flex-start !important;
 	}
-	
 }
-
 
 @media screen and (max-width: 700px) {
 
@@ -524,7 +521,6 @@ footer a:hover {
 	.carte li span {
 		float: inherit;
 		display: block;
-		margin-top: 5px;
 		font-size: 20px;
 		font-weight: 700;
 	}
