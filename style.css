@@ -11,7 +11,6 @@ html, body, p {
 
 a {
 	display: inline-block;
-	height: 27px;
 	font-size: 25px;
 	font-family: roboto;
 	text-decoration: none;
@@ -59,7 +58,6 @@ header {
 
 .wrapper {
 	flex: 1;
-	overflow: hidden;
 	overflow-y: auto;
 	flex-direction: column;
 	display: flex;
@@ -72,7 +70,6 @@ header {
 
 .wrapper-menu {
 	flex: 1;
-	overflow: hidden;
 	overflow-y: auto;
 	flex-direction: column;
 	display: flex;
@@ -83,7 +80,16 @@ header {
 .legale {
 	padding: 20px 100px;
 	overflow-y: auto;
+	flex: 1;
 	font-family: 'roboto', sans-serif;
+}
+
+.legale p {
+	text-align: justify;
+}
+
+.legale p:first-child {
+	text-align: center;
 }
 
 .legale a {
@@ -384,7 +390,6 @@ form {
 }
 
 .btn {
-	display: flex;
 	margin: auto;
 	padding: 9px 20px;
 	border-radius: 3px;
@@ -397,9 +402,7 @@ form {
 }
 
 #wave {
-	position   : relative;
-	align-self: flex-end;
-	margin-left: 5px;
+	display: inline-block;
 	 }
 
 .dot {
@@ -421,14 +424,14 @@ form {
 	animation-delay: -1.4s;
 	
 }
-.btn:hover .dot.dot:nth-child(2){
+.btn:hover .dot:nth-child(2){
 	animation: wave 1.3s linear infinite;
 	-webkit-animation: wave 1.3s linear infinite;
 	animation-delay: -1.1s;
 	
 }
 
-.btn:hover .dot.dot:nth-child(3){
+.btn:hover .dot:nth-child(3){
 	animation: wave 1.3s linear infinite;
 	-webkit-animation: wave 1.3s linear infinite;
 	animation-delay: -0.9s;
