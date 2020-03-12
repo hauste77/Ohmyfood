@@ -194,8 +194,7 @@ header {
 }
 
 .effet {
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
+    background: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
@@ -418,7 +417,7 @@ form {
 	color: #FDCB46;
 }
 
-.btn:hover .dot.dot:nth-child(1){
+.btn:hover .dot:nth-child(1){
 	animation: wave 1.3s linear infinite;
 	-webkit-animation: wave 1.3s linear infinite;
 	animation-delay: -1.4s;
